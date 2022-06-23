@@ -1,0 +1,33 @@
+{
+  "name": "munsync/api",
+  "description": "MunSync API ",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "William Stam",
+      "email": "william@munsoft.co.za"
+    }
+  ],
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "System\\": "System/",
+      "App\\": "App/",
+      "Tests\\": "tests/"
+    }
+  }
+}
